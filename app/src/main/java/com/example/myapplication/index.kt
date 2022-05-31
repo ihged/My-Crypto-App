@@ -1,19 +1,13 @@
 package com.example.myapplication
 
 import android.content.Intent
-import android.graphics.Color
 import android.os.Bundle
-import android.util.AttributeSet
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.view.marginStart
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
-import java.util.jar.Attributes
 
 
 class index : AppCompatActivity() {
@@ -26,7 +20,7 @@ class index : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_index)
         mTvName = findViewById(R.id.nameSurname)
-        mLogout = findViewById(R.id.addCard)
+        mLogout = findViewById(R.id.logout)
         //mAddCard=findViewById(R.id.addCard)
         mTvName?.text = "${Infos.kName} ${Infos.kSurname}"
         fAuth = FirebaseAuth.getInstance()
